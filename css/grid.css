@@ -1,0 +1,11 @@
+.grid-section {
+  grid-column: 2 / 4;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 4rem;
+
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  gap: 20px;
+}

@@ -1,1 +1,48 @@
 @import "./reset.css";
+@import "./grid.css";
+
+body {
+  background: #faf6ee;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+  background: #ffbb55;
+
+  grid-column: 3 / -1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu li a {
+  color: #222222;
+  text-decoration: none;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+
+  display: block;
+  padding: 10px;
+}
+
+.titulo {
+  font-family: "Playfair Display SC", Georgia;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 1rem;
+
+  grid-column: 1 / -1;
+}
