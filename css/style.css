@@ -2,6 +2,7 @@
 @import "./grid.css";
 @import "./faq.css";
 @import "./contato.css";
+@import "./copy.css";
 
 body {
   background: #faf6ee;
