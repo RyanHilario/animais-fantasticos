@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./grid.css";
 @import "./faq.css";
+@import "./contato.css";
 
 body {
   background: #faf6ee;
