@@ -1,11 +1,9 @@
 .copy {
-  grid-column: 3 / -1;
   background: #ffbb55;
   margin-bottom: 2rem;
 }
 
 .copy {
   font-family: "IBM Plex Mono", monospace;
-  font-weight: bold;
   padding: 20px;
 }

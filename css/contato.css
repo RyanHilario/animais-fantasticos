@@ -1,17 +1,9 @@
-.contato .mapa {
-  grid-column: 2;
-}
-
-.contato .dados {
-  grid-column: 3;
-}
-
-.contato .dados li {
+.contato-dados li {
   font-family: Helvetica, Arial;
   margin-bottom: 1rem;
 }
 
-.contato .dados li::before {
+.contato-dados li::before {
   content: "";
   display: inline-block;
   width: 20px;
