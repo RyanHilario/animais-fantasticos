@@ -1,7 +1,8 @@
-@import "./modal.css";
 @import "./reset.css";
 @import "./global.css";
 @import "./grid.css";
 @import "./faq.css";
 @import "./contato.css";
 @import "./copy.css";
+@import "./modal.css";
+@import "./tooltip.css";
