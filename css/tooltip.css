@@ -11,4 +11,14 @@
 
   position: absolute;
   z-index: 500;
+  animation: show-on 2s forwards;
+}
+
+@keyframes show-on {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
