@@ -20,17 +20,18 @@ export default function initAnimaNumeros() {
     }
   }
 
+  let observer = new MutationObserver(handleMutation);
+
+  function handleMutation(mutations) {
+    if (mutations[0].target.classList.contains("ativo")) {
+      observer.disconnect();
+      animaNumeros();
+    }
+  }
+
   const observeTarget = document.querySelector(".numeros");
 
   if (observeTarget) {
-    function handleMutation(mutations) {
-      if (mutations[0].target.classList.contains("ativo")) {
-        observer.disconnect();
-        animaNumeros();
-      }
-    }
-
-    const observer = new MutationObserver(handleMutation);
     observer.observe(observeTarget, { attributes: true });
   }
 }
