@@ -1,4 +1,4 @@
-import SmoothScroll from "./module/scroll-suave.js";
+import ScrollSuave from "./module/scroll-suave.js";
 import AccordionFaq from "./module/accordion.js";
 import TabNav from "./module/tabnav.js";
 import Modal from "./module/modal.js";
@@ -10,8 +10,8 @@ import initFecthAnimais from "./module/fetch-animais.js";
 import initFetchBitcoin from "./module/fetch-bitcoin.js";
 import initScrollAnimation from "./module/scroll-animacao.js";
 
-const smoothScroll = new SmoothScroll('[data-menu="suave"] a[href^="#"]');
-smoothScroll.init();
+const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
+scrollSuave.init();
 
 const accordionFaq = new AccordionFaq('[data-anime="accordion"] dt');
 accordionFaq.init();
