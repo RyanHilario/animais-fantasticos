@@ -1,34 +1,61 @@
-export default function initModal() {
-  const botaoAbrir = document.querySelector('[data-modal="abrir"]');
-  const botaoFechar = document.querySelector('[data-modal="fechar"]');
-  const modalContainer = document.querySelector('[data-modal="container"]');
+export default class Modal {
+  constructor(botaoAbrir, botaoFechar, modalContainer) {
+    this.botaoAbrir = document.querySelector(botaoAbrir);
+    this.botaoFechar = document.querySelector(botaoFechar);
+    this.modalContainer = document.querySelector(modalContainer);
 
-  function toggleMenu(event) {
-    event.preventDefault();
-    const estaAtivo = modalContainer.classList.toggle("ativo");
+    // bind this ao callback para
+    // facer referência ao objeto da classe
+    this.eventToggleModal = this.eventToggleModal.bind(this);
+    this.cliqueForaModal = this.cliqueForaModal.bind(this);
+    this.fecharModalEsc = this.fecharModalEsc.bind(this);
+  }
+
+  // abre ou fecha o modal
+  toggleModal() {
+    const estaAtivo = this.modalContainer.classList.toggle("ativo");
 
     if (estaAtivo) {
-      window.addEventListener("keydown", apertarEsc);
+      window.addEventListener("keydown", this.fecharModalEsc);
     } else {
-      window.removeEventListener("keydown", apertarEsc);
+      window.removeEventListener("keydown", this.fecharModalEsc);
     }
   }
 
-  function cliqueFora(event) {
-    if (event.target === this) {
-      toggleMenu(event);
+  // adiciona o evento de toggle ao modal
+  eventToggleModal(event) {
+    event.preventDefault();
+    this.toggleModal();
+  }
+
+  // fecha o modal ao clicar do lado de fora
+  cliqueForaModal(event) {
+    if (event.target === this.modalContainer) {
+      this.toggleModal();
     }
   }
 
-  function apertarEsc(event) {
-    if (event.key === "Escape" && modalContainer.classList.contains("ativo")) {
-      toggleMenu(event);
+  // fecha modal ao aperar a tecla ESC
+  fecharModalEsc(event) {
+    if (
+      event.key === "Escape" &&
+      this.modalContainer.classList.contains("ativo")
+    ) {
+      this.toggleModal();
     }
   }
 
-  if (botaoAbrir && botaoFechar && modalContainer) {
-    botaoAbrir.addEventListener("click", toggleMenu);
-    botaoFechar.addEventListener("click", toggleMenu);
-    modalContainer.addEventListener("click", cliqueFora);
+  // adiciona os eventos aos elementos do modal
+  addModalEvents() {
+    this.botaoAbrir.addEventListener("click", this.eventToggleModal);
+    this.botaoFechar.addEventListener("click", this.eventToggleModal);
+    this.modalContainer.addEventListener("click", this.cliqueForaModal);
+  }
+
+  init() {
+    if (this.botaoAbrir && this.botaoFechar && this.modalContainer) {
+      this.addModalEvents();
+    }
+    return this;
   }
 }
