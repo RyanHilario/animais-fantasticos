@@ -1,4 +1,4 @@
-import initAnimaNumeros from "./anima-numeros.js";
+import AnimaNumeros from "./anima-numeros.js";
 
 export default function initFecthAnimais() {
   async function fetchAnimais(url) {
@@ -11,7 +11,12 @@ export default function initFecthAnimais() {
         const divAnimal = createAnimal(animal);
         numerosGrid.appendChild(divAnimal);
       });
-      initAnimaNumeros();
+      const animaNumeros = new AnimaNumeros(
+        "[data-numero]",
+        ".numeros",
+        "ativo"
+      );
+      animaNumeros.init();
     } catch (erro) {
       console.log(erro);
     }
@@ -24,5 +29,5 @@ export default function initFecthAnimais() {
     return div;
   }
 
-  fetchAnimais("/animaisapi.json");
+  fetchAnimais("./animaisapi.json");
 }
