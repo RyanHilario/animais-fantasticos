@@ -9,6 +9,7 @@ import Funcionamento from "./module/funcionamento.js";
 import fecthAnimais from "./module/fetch-animais.js";
 import fetchBitcoin from "./module/fetch-bitcoin.js";
 import ScrollAnima from "./module/scroll-anima.js";
+import SlideNav from "./module/slide.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -46,3 +47,7 @@ funcionamento.init();
 
 fecthAnimais("./animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://www.blockchain.com/tickers", ".btc-preco");
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
