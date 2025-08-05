@@ -38,9 +38,9 @@
   top: -10px;
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 15px solid #000000;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid #ee5544;
 }
 
 .dropdown-menu a:hover {
@@ -49,4 +49,11 @@
 
 .dropdown-menu.ativo {
   display: block;
+}
+
+@media (max-width: 700px) {
+  [data-dropdown] .dropdown-menu {
+    display: block;
+    animation: show-up 0.3s forwards;
+  }
 }
