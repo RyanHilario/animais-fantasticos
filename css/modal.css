@@ -32,11 +32,13 @@
 
 .modal {
   background: #ffffff;
+  width: 80vw;
+  max-width: 600px;
+  box-sizing: border-box;
   padding: 40px;
   border: 10px solid #ffbb55;
   box-shadow: 0 0 0 10px #ffffff;
   position: relative;
-  min-width: 300px;
 }
 
 .modal .fechar {
@@ -45,12 +47,9 @@
   border: 4px solid #ffffff;
   border-radius: 50%;
   color: #ffffff;
-  background: #ee5544;
+  background: #ee5544 url("../img/fechar.svg") no-repeat center center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
-  font-size: 1.2rem;
-  font-family: "IBM Plex Mono", monospace;
   cursor: pointer;
-
   position: absolute;
   top: -30px;
   right: -30px;
@@ -67,6 +66,8 @@
   width: 100%;
   padding: 0.7rem 0.5rem;
   box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 0px;
 }
 
 .modal button[type="submit"] {

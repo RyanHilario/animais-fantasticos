@@ -91,7 +91,7 @@ body {
 
 @media (max-width: 700px) {
   .grid-section h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .menu {
@@ -143,18 +143,23 @@ body {
   }
 }
 
-.js [data-anime="accordion"] dt::after {
-  content: "▼";
-  display: inline-block;
-  margin-left: 10px;
-  transition: transform 0.5s;
-}
 .js [data-anime="accordion"] dt {
   cursor: pointer;
 }
 
+.js [data-anime="accordion"] dt::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/arrow-red.svg") no-repeat center center;
+  margin-left: 10px;
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+}
+
 .js [data-anime="accordion"] dt.ativo::after {
-  transform: rotate(-180deg);
+  transform: rotate(-90deg);
 }
 
 .js [data-anime="accordion"] dd {
@@ -188,4 +193,11 @@ body {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition: 0.5s;
+}
+
+.arrow-black {
+  background: url("../img/arrow-black.svg") no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
 }
