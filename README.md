@@ -105,7 +105,7 @@ Você pode acessar a versão online do projeto clicando aqui:
 
 ---
 
-## APIs Utilizadas
+## 🌐 APIs Utilizadas
 
 - **OpenWeatherMap API** — Fornece dados meteorológicos em tempo real, como temperatura, umidade e condição do tempo.
 - **Unsplash API** — Utilizada para carregar imagens de fundo relacionadas ao clima.
@@ -114,7 +114,7 @@ Você pode acessar a versão online do projeto clicando aqui:
 
 ---
 
-## Autor
+## 👤 Autor
 
 **Ryan** — Desenvolvedor Front-end apaixonado por criar interfaces interativas e funcionais, com foco em usabilidade e performance.  
 📧 Email: [ryanhilario.job@gmail.com](ryanhilario.job@gmail.com)  
