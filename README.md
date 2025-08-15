@@ -53,52 +53,55 @@ Você pode acessar a versão online do projeto clicando aqui:
 ---
 
 ## 📂 Estrutura de Pastas
-    Animais-Fantasticos/
-    │
-    ├── css/
-    │ ├── style.css
-    │ ├── reset.css
-    │ ├── global.css
-    │ ├── grid.css
-    │ ├── ... (outros módulos de CSS)
-    │
-    ├── img/
-    │ ├── logo.svg
-    │ ├── imagem1.jpg
-    │ ├── ... (outras imagens)
-    │
-    ├── js/
-    │ ├── main.js
-    │ ├── module/
-    │ ├── scroll-suave.js
-    │ ├── accordion.js
-    │ ├── tabnav.js
-    │ ├── modal.js
-    │ ├── tooltip.js
-    │ ├── dropdown-menu.js
-    │ ├── menu-mobile.js
-    │ ├── funcionamento.js
-    │ ├── fetch-animais.js
-    │ ├── fetch-bitcoin.js
-    │ ├── scroll-anima.js
-    │ ├── slide.js
-    │
-    ├── animaisapi.json
-    ├── index.html
-    └── README.md
+```plaintext
+Animais-Fantasticos/
+│
+├── css/
+│ ├── style.css
+│ ├── reset.css
+│ ├── global.css
+│ ├── grid.css
+│ ├── ... (outros módulos de CSS)
+│
+├── img/
+│ ├── logo.svg
+│ ├── imagem1.jpg
+│ ├── ... (outras imagens)
+│
+├── js/
+│ ├── main.js
+│ ├── module/
+│ ├── scroll-suave.js
+│ ├── accordion.js
+│ ├── tabnav.js
+│ ├── modal.js
+│ ├── tooltip.js
+│ ├── dropdown-menu.js
+│ ├── menu-mobile.js
+│ ├── funcionamento.js
+│ ├── fetch-animais.js
+│ ├── fetch-bitcoin.js
+│ ├── scroll-anima.js
+│ ├── slide.js
+│
+├── animaisapi.json
+├── index.html
+└── README.md
+```
 
 ---
 
 ## 💻 Como Usar
 
 1. **Clonar o repositório**
-   ```bash
-   git clone https://github.com/seuusuario/animais-fantasticos.git
+    ```bash
+    git clone https://github.com/RyanHilario/animais-fantasticos.git
+    ```
 
 2. **Acessar a pasta do projeto**
-   ```bash
-   cd animais-fantasticos
-   ```
+    ```bash
+    cd animais-fantasticos
+    ```
 
 3. **Abrir o arquivo index.html no navegador**
 - Você pode simplesmente clicar nele ou usar uma extensão como Live Server no VS Code para ter recarregamento automático.
@@ -114,7 +117,7 @@ Você pode acessar a versão online do projeto clicando aqui:
 
 ---
 
-## 👤 Autor
+## 👨‍💻 Autor
 
 **Ryan** — Desenvolvedor Front-end apaixonado por criar interfaces interativas e funcionais, com foco em usabilidade e performance.  
 📧 Email: [ryanhilario.job@gmail.com](ryanhilario.job@gmail.com)  
